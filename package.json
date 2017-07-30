@@ -1,0 +1,22 @@
+{
+  "name": "shaping-up-withng-controlleras",
+  "version": "1.0.0",
+  "description": "--- As someone who absolutely loves codeschool, I wanted to bring one of the Angular examples they have up to date using the ControllerAs syntax.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanmccormick/ShapingUpWithAngularControllerAs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanmccormick/ShapingUpWithAngularControllerAs/issues"
+  },
+  "homepage": "https://github.com/ryanmccormick/ShapingUpWithAngularControllerAs#readme",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}
