@@ -5,19 +5,32 @@
     .module('app.store')
     .controller('StoreController', StoreController);
 
-  StoreController.$inject = ['APP_DATA'];
+  StoreController.$inject = ['StoreService'];
 
   /* @ngInject */
-  function StoreController(APP_DATA) {
+  function StoreController(StoreService) {
     var vm = this;
-    vm.products = APP_DATA.gems;
+    //vm.products = APP_DATA.gems;
+    vm.products = [];
 
     activate();
     /////////////////
 
     function activate() {
-      // Run init stuff here
+      getProducts();
     }
+
+    getProducts() {
+      return StoreService.query()
+      .then(function(data) {
+        vm.products = data;
+        return vm.products;
+      }).catch(function(e) {
+        $log.log(e.message || 'something went wrong');
+      });
+    }
+
+
 
   }
 
