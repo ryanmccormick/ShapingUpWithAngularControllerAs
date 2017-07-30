@@ -10,6 +10,14 @@ And refactoring everything to use the controllerAs syntax as it is the current b
 For more information about the controllerAs syntax format:
 <https://github.com/johnpapa/angular-styleguide/tree/master/a1>
 
+## Changes
+- Update Angular version from 1.2.15 to 1.6.4 to support newer features such as AngularJS `$q`
+- Set app data in an Angular constant and return from a service. This approach allows a user to easily swap out for $http to pull data from a live API.
+- Split files into separate modules by subject domain.
+- Change image file paths in constants file to allow images to be pulled from the assets/images directory.
+- Add http server to package.json and allow user to run local server with `npm start` instead of installing globally.
+
+
 ## How to Run the Example
 1. Clone this repo
 2. Install node_modules `npm install`
