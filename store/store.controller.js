@@ -10,7 +10,6 @@
   /* @ngInject */
   function StoreController(StoreService) {
     var vm = this;
-    //vm.products = APP_DATA.gems;
     vm.products = [];
 
     activate();
@@ -29,9 +28,6 @@
         $log.log(e.message || 'something went wrong');
       });
     }
-
-
-
   }
 
 })();
