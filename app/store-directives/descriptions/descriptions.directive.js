@@ -8,7 +8,7 @@
   function descriptions() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'store-directives/descriptions/descriptions.tpl.html'
+      templateUrl: 'app/store-directives/descriptions/descriptions.tpl.html'
     };
 
     return directive;

@@ -3,12 +3,12 @@
 
   angular
     .module('store-directives')
-    .directive('specs', specs);
+    .directive('reviews', reviews);
 
-  function specs() {
+  function reviews() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'store-directives/specs/specs.tpl.html'
+      templateUrl: 'app/store-directives/reviews/reviews.tpl.html'
     };
 
     return directive;

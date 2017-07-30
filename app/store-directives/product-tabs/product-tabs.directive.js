@@ -8,7 +8,7 @@
   function productTabs() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'store-directives/product-tabs/product-tabs.tpl.html',
+      templateUrl: 'app/store-directives/product-tabs/product-tabs.tpl.html',
       controller: ProductTabController,
       controllerAs: 'tab'
     };

@@ -19,7 +19,7 @@
       getProducts();
     }
 
-    getProducts() {
+    function getProducts() {
       return StoreService.query()
       .then(function(data) {
         vm.products = data;
