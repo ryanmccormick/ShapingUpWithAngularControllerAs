@@ -5,10 +5,10 @@
     .module('app.store')
     .controller('StoreController', StoreController);
 
-  StoreController.$inject = ['StoreService'];
+  StoreController.$inject = ['$log', 'StoreService'];
 
   /* @ngInject */
-  function StoreController(StoreService) {
+  function StoreController($log, StoreService) {
     var vm = this;
     vm.products = [];
 
